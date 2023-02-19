@@ -316,8 +316,8 @@ body {
     padding-bottom: 40px;
     padding-right: 40px;
     background-color: var(--bgc-white);
-    /* opacity: 0; */
-    /* pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
 }
 
 .btn-menu-close{
