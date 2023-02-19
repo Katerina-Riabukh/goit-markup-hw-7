@@ -25,7 +25,7 @@
         <a class="link logo-head" href="index.html"
           ><span class="web">WEB</span>Studio</a
         >
-        <nav>
+        <nav class="nav-section">
           <ul class="site-nav list">
             <li class="nav-item"><a class="link current" href="">Studio</a></li>
             <li class="nav-item">
@@ -35,19 +35,100 @@
           </ul>
         </nav>
         <!-- Contacts of Web Studio -->
-        <address>
+        <address class="address-section">
           <ul class="list address-nav">
-            <li class="nav-item">
+            <li class="nav-item address-item">
               <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item address-item">
               <a class="link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
         </address>
+        <svg class="burger-menu" width="32" height="22"><use href="./symbol-defs.svg#icon-burger-menu-converted"></use></svg>
+        <div class="container hidden-menu">
+          <ul class="list menu-list">
+            <li class="menu-item"><a class="menu-link link" href="">Studio</a></li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
+          </ul>
+          <ul class="menu-list-address list">
+            <li class="menu-item-address">
+              <a class="menu-link-address link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="menu-item-address">
+              <a class="menu-link-address link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-media list">
+            <li class="soc-media-item">
+              <a
+                class="soc-media-link"
+                href=""
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="soc-media-icon" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media-item">
+              <a
+                class="soc-media-link"
+                href=""
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="soc-media-icon" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media-item">
+              <a
+                class="soc-media-link"
+                href=""
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="soc-media-icon" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-media-item">
+              <a
+                class="soc-media-link"
+                href=""
+                aria-label="Linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="soc-media-icon" width="24" height="24">
+                  <use href="./symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-menu-close">
+            <svg width="8" height="8">
+              <use href="./symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+  
+        </div>
       </div>
+      <!-- HIDDEN MENU -->
+      
     </header>
     <main>
       <!-- HERO -->
@@ -478,7 +559,7 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container foot-container">
+      <div class="foot-container container">
         <div class="foot-description">
           <a class="link logo-foot" href="index.html"
             ><span class="web">WEB</span>Studio</a
@@ -544,7 +625,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="subscribe-foot">
           <p class="text subscribe-title">Subscribe</p>
           <form class="subscribe-form" action="">
             <label>
