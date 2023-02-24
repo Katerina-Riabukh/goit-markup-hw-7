@@ -130,20 +130,25 @@ body {
   
     /* outline: 2px solid red; */
 }
+@media screen and (max-width: 479.98px){
+    .container{
+        width: 100%;
+    }
+}
 @media screen and (min-width: 480px){
     .container{
-        width: 428px;
+        max-width: 428px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container{
-        width: 768px;
+        max-width: 768px;
     }
 }
 @media screen and (min-width: 1200px) {
     .container{ 
-        width: 1158px;
+        max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -354,6 +359,7 @@ body {
     padding-left: 40px;
     padding-bottom: 40px;
     padding-right: 40px;
+    width: 100%;
     height: 100%;
     justify-content: space-between;
     display: flex;
@@ -420,15 +426,9 @@ body {
 }
 .menu-media{
     display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 56px;
-    
+    justify-content: space-between;
+    width: 100%; 
 }
-
-
-
-
 
 /**
   |============================
@@ -440,10 +440,10 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../BG-image/Dark-mobile-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;}
-
-.container-hero{
+    background-position: center;
     max-width: 1440px;  
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
 }
 
@@ -1295,23 +1295,30 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 408px;
-    height: 584px;
+    width: 392px; 
     padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
     padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 4px;
     background-color: #FCFCFC;
 }
-@media screen and (max-width: 767px){
-    .modal-box {
-        width: 392px;
-        padding-left: 16px;
-        padding-right: 16px;
-    } 
+@media screen and (max-width: 479px){
+    .modal-box{
+        width: calc(100% - 10%)
+    }
 }
+@media screen and (min-width: 768px){
+    .modal-box {
+        width: 408px;
+        height: 584px;
+        
+        padding-left: 24px;
+        padding-right: 24px;
+        
+    } 
 
+}
 
 .modal-close {
     position: absolute;
