@@ -487,18 +487,15 @@ body {
 } 
 .hero-title {
     margin: 0px;
-    width: 496px;
     margin-left: auto;
     margin-right: auto;
-
+    max-width: 320px;
     margin-bottom: 72px;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: calc(60 / 56);
-    letter-spacing: 0.02em;
+   
     color: var(--white-text-color);
 }
-@media screen and (max-width: 767px){
+
+@media screen and (min-width: 480px){
     .hero-title{
         width: 320px;
         font-size: 36px;
@@ -507,6 +504,12 @@ body {
 }
 @media screen and (min-width: 768px){
     .hero-title{
+        min-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: calc(60 / 56);
+        letter-spacing: 0.02em;
+        
         margin-bottom: 40px;
     }
 }
@@ -684,11 +687,11 @@ body {
 
 @media screen and (min-width: 1200px){
     .customer-container{
-        padding: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .customers-list{
         flex-wrap: nowrap;
-        justify-content: center;
         gap: 24px;
     }
 }
@@ -1306,7 +1309,7 @@ body {
 }
 @media screen and (max-width: 479px){
     .modal-box{
-        width: calc(100% - 10%)
+        width: calc(100% - 5px)
     }
 }
 @media screen and (min-width: 768px){
